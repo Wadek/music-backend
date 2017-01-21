@@ -21,7 +21,7 @@ conn.once('open',function(){
 	var fs_write_stream = fs.createWriteStream(pth);
 	//errors out from here on
 	var readstream = gfs.createReadStream({ 
-		filename: "notes1.docx"
+		filename: "notes1.docx"	//CHANGE TO DESIRED FILE (file to be downloaded from database)
 	});
 	readstream.on("error", function(err){
         console.log("No image found with that title");
